@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.abn-popup-slider {}
+
+/* the slides */
+.abn-popup-slider .slick-slide {
+    margin: 0 27px;
+}
+
+/* the parent */
+.abn-popup-slider .slick-list {
+	margin: 0 -27px;
+}
+
+.abn-slide-item-area {}
+
+.abn-image-box {
+    position: relative;
+}
+
+.abn-image-box img {
+	width: 100%;
+}
+
+.abn-user-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.abn-user-info h4 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
+.abn-user-info p {
+    color: #FFFFFF;
+    position: relative;
+    font-size: 17.64px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    display: inline-block;
+}
+
+.abn-user-info p:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 15px);
+    height: 1px;
+    top: -2px;
+    left: 0;
+    z-index: 5;
+    background: #FFFFFF;
+}
+
+.abn-video-play {
+    position: absolute;
+    z-index: 5;
+    left: 20px;
+    bottom: 20px;
+}
+
+.abn-video-play img {
+    width: 60px;
+    height: 60px;
+}
+
+.abn-doctor-content {}
+
+.abn-doctor-content h3 {
+    color: #121212;
+    margin: 24px 0 16px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.abn-doctor-content p {
+    color: #121212;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
