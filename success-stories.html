@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Success Stories</title>
+
+
+	<!-- ABN Slider Section Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<style>
+	    @keyframes modal-video{from{opacity:0}to{opacity:1}}@keyframes modal-video-inner{from{transform:translate(0, 100px)}to{transform:translate(0, 0)}}.modal-video{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1000000;cursor:pointer;opacity:1;animation-timing-function:ease-out;animation-duration:.3s;animation-name:modal-video;-webkit-transition:opacity .3s ease-out;-moz-transition:opacity .3s ease-out;-ms-transition:opacity .3s ease-out;-o-transition:opacity .3s ease-out;transition:opacity .3s ease-out}.modal-video-close{opacity:0}.modal-video-close .modal-video-movie-wrap{-webkit-transform:translate(0, 100px);-moz-transform:translate(0, 100px);-ms-transform:translate(0, 100px);-o-transform:translate(0, 100px);transform:translate(0, 100px)}.modal-video-body{max-width:940px;width:100%;height:100%;margin:0 auto;display:table}.modal-video-inner{display:table-cell;vertical-align:middle;width:100%;height:100%}.modal-video-movie-wrap{width:100%;height:0;position:relative;padding-bottom:56.25%;background-color:#333;animation-timing-function:ease-out;animation-duration:.3s;animation-name:modal-video-inner;-webkit-transform:translate(0, 0);-moz-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-ms-transition:-ms-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal-video-movie-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}.modal-video-close-btn{position:absolute;z-index:2;top:-35px;right:-35px;display:inline-block;width:35px;height:35px;overflow:hidden;border:none;background:transparent}.modal-video-close-btn:before{transform:rotate(45deg)}.modal-video-close-btn:after{transform:rotate(-45deg)}.modal-video-close-btn:before,.modal-video-close-btn:after{content:'';position:absolute;height:2px;width:100%;top:50%;left:0;margin-top:-1px;background:#fff;border-radius:5px;margin-top:-6px}
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+		.abn-success-stories {
+		    overflow: hidden;
+		    padding: 96px 80px;
+		}
+		.abn-ss-container-wrapper {
+		    max-width: 1450px;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+
+		.abn-success-stories-content h2 {
+		    color: #121212;
+		    font-size: 44px;
+		    font-family: Avenir Next;
+		    line-height: 1.2;
+		    font-weight: 500;
+		    margin: 0 0 48px 0;
+		}
+
+		.abn-success-stories-content h2 span {
+		    color: #0D6976;
+		    font-weight: 700;
+		}
+
+		.modal-video-movie-wrap {
+		    border: 5px solid #ffffff;
+		    border-radius: 10px;
+		}
+
+		.modal-video-movie-wrap iframe {
+		    border-radius: 10px;
+		}
+		.modal-video-close-btn {
+		    position: absolute;
+		    z-index: 2;
+		    top: 15px;
+		    right: 15px;
+		    display: inline-block;
+		    width: 35px;
+		    height: 35px;
+		    overflow: hidden;
+		    border: none;
+		    background: #ffffff;
+		    border-radius: 50%;
+		    cursor: pointer;
+		}
+
+		.modal-video-close-btn:before, 
+		.modal-video-close-btn:after {
+		    content: '';
+		    position: absolute;
+		    height: 3px;
+		    width: 78%;
+		    top: calc(50% + 4px);
+		    left: calc(0% + 4px);
+		    margin-top: -1px;
+		    background: #707477;
+		    border-radius: 5px;
+		    margin-top: -6px;
+		}	
+		.abn-success-stories-slider {}
+
+		/* the slides */
+		.abn-success-stories-slider .slick-slide {
+		    margin: 0 15px;
+		}
+
+		/* the parent */
+		.abn-success-stories-slider .slick-list {
+			margin: 0 -15px;
+		}
+
+		.abn-success-stories-slider ul.slick-dots {
+		    width: 185px;
+		    height: 32px;
+		    bottom: -56px;
+		    left: calc(50% - 92px);
+		    z-index: 55;
+		}
+
+		.abn-success-stories-slider ul.slick-dots li {
+		    width: 14px;
+		    height: 14px;
+		}
+
+		.abn-success-stories-slider .slick-dots li button:before {
+		    position: unset !important;
+		    content: none !important;
+		}
+
+		.abn-success-stories-slider .slick-dots li button {
+		    padding: 0 !important;
+		    width: 14px;
+		    height: 14px;
+		    border-radius: 50%;
+		    border: 2px solid #4FA2AE;
+		}
+
+		.abn-success-stories-slider .slick-dots li.slick-active button {
+		    background: #4FA2AE;
+		}
+
+		.abn-success-stories-slider .slick-arrow {
+		    width: 48px;
+		    height: 48px;
+		}
+
+		.abn-success-stories-slider .slick-prev {
+		    left: -64px;
+		    top: calc(50% - 0px);
+		    bottom: unset;
+		    z-index: 5;
+		}
+
+		.abn-success-stories-slider .slick-next {
+		    left: unset;
+		    right: -64px;
+		    top: calc(50% - 0px);
+		    bottom: unset;
+		    z-index: 5;
+		}
+
+		.abn-success-stories-slider .slick-prev:before, 
+		.abn-success-stories-slider .slick-next:before {
+		    font-size: 58px;
+		    opacity: 1;
+		    color: #4fa2ae;
+		}
+		.abn-slide-item-area {}
+
+		.abn-ss-slider-item {
+		    position: relative;
+		}
+
+		.abn-ss-slider-item img {
+			width: 100%;
+		}
+
+		.abn-ss-video-play {
+		    position: absolute;
+		    z-index: 5;
+		    left: calc(50% - 21px);
+		    bottom: calc(50% - 21px);
+		}
+
+		.abn-ss-video-play img {
+		    width: 42px;
+		    height: 42px;
+		}
+
+		@media only screen and (max-width: 1024px) {
+
+			.abn-success-stories {
+			    padding: 40px 80px;
+			}
+			.abn-success-stories-slider .slick-prev:before, 
+			.abn-success-stories-slider .slick-next:before {
+			    font-size: 44px;
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+			.abn-success-stories {
+			    padding: 40px 20px;
+			}
+			.abn-ss-container-wrapper {
+			    display: block;
+			}
+
+			.abn-ods-slider {
+			    width: 100%;
+			    min-width: 100%;
+			}
+
+			.abn-success-stories-slider {
+			    width: 100%;
+			}
+			.abn-success-stories-slider ul.slick-dots {
+			    bottom: -64px;
+			    width: 150px;
+			    left: calc(50% - 75px);
+			}
+
+			.abn-success-stories-slider .slick-prev:before, 
+			.abn-success-stories-slider .slick-next:before {
+			    font-size: 48px;
+			    opacity: 1;
+			    color: #4fa2ae;
+			}
+
+			.abn-success-stories-slider .slick-next {
+			    left: unset;
+			    right: calc(50% - 125px);
+			    top: unset;
+			    bottom: -98px !important;
+			}
+
+			.abn-success-stories-slider .slick-prev {
+			    left: calc(50% - 125px);
+			    top: unset;
+			    bottom: -98px !important;
+			}
+
+			.abn-success-stories-content h2 {
+			    font-size: 28px;
+			    text-align: center;
+			    margin: 0 0 32px;
+			}
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<section class="abn-success-stories">
+		<div class="abn-ss-container-wrapper">
+			<div class="abn-success-stories-content text-center">
+				<h2>Thousands Of <span>Success Stories</span> </h2>
+			</div>
+			<div class="abn-ss-slider-area">
+				<div class="abn-success-stories-slider">
+					<div class="abn-ss-slider-item">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+						<div class="abn-ss-video-play">
+							<a href="#" class="abn-ss-video-1" data-video-id='ScMzIvxBSi4'>
+								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+							</a>
+						</div>
+					</div>
+					<div class="abn-ss-slider-item">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+						<div class="abn-ss-video-play">
+							<a href="#" class="abn-ss-video-2" data-video-id='ScMzIvxBSi4'>
+								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+							</a>
+						</div>
+					</div>
+					<div class="abn-ss-slider-item">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+						<div class="abn-ss-video-play">
+							<a href="#" class="abn-ss-video-3" data-video-id='ScMzIvxBSi4'>
+								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+							</a>
+						</div>
+					</div>
+					<div class="abn-ss-slider-item">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+						<div class="abn-ss-video-play">
+							<a href="#" class="abn-ss-video-4" data-video-id='ScMzIvxBSi4'>
+								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+							</a>
+						</div>
+					</div>
+					<div class="abn-ss-slider-item">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+						<div class="abn-ss-video-play">
+							<a href="#" class="abn-ss-video-5" data-video-id='ScMzIvxBSi4'>
+								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+							</a>
+						</div>
+					</div>
+					<div class="abn-ss-slider-item">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+						<div class="abn-ss-video-play">
+							<a href="#" class="abn-ss-video-6" data-video-id='ScMzIvxBSi4'>
+								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- ABN Slider Section Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script>
+	    "use strict";var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj};(function umd(factory){"use strict";if(typeof define==="function"&&define.amd){define(["jquery"],factory)}else if((typeof exports==="undefined"?"undefined":_typeof(exports))==="object"){module.exports=factory(require("jquery"))}else{factory(jQuery)}})(function modalVideo($){var defaults={channel:"youtube",youtube:{autoplay:1,cc_load_policy:1,color:null,controls:1,disablekb:0,enablejsapi:0,end:null,fs:1,h1:null,iv_load_policy:1,list:null,listType:null,loop:0,modestbranding:null,origin:null,playlist:null,playsinline:null,rel:0,showinfo:1,start:0,wmode:"transparent",theme:"dark"},ratio:"16:9",vimeo:{api:false,autopause:true,autoplay:true,byline:true,callback:null,color:null,height:null,loop:false,maxheight:null,maxwidth:null,player_id:null,portrait:true,title:true,width:null,xhtml:false},allowFullScreen:true,animationSpeed:300,classNames:{modalVideo:"modal-video",modalVideoClose:"modal-video-close",modalVideoBody:"modal-video-body",modalVideoInner:"modal-video-inner",modalVideoIframeWrap:"modal-video-movie-wrap",modalVideoCloseBtn:"modal-video-close-btn"},aria:{openMessage:"You just openned the modal video",dismissBtnMessage:"Close the modal by clicking here"}};function getQueryString(obj){var url="";for(var key in obj){if(obj.hasOwnProperty(key)){if(obj[key]!==null){url+=key+"="+obj[key]+"&"}}}return url.substr(0,url.length-1)}function getYoutubeUrl(youtube,videoId){var query=getQueryString(youtube);return"https://www.youtube.com/embed/"+videoId+"?"+query}function getVimeoUrl(vimeo,videoId){var query=getQueryString(vimeo);return"https://player.vimeo.com/video/"+videoId+"?"+query}function getVideoUrl(opt,videoId){if(opt.channel==="youtube"){return getYoutubeUrl(opt.youtube,videoId)}else if(opt.channel==="vimeo"){return getVimeoUrl(opt.vimeo,videoId)}}function getPadding(ratio){var arr=ratio.split(":");var width=Number(arr[0]);var height=Number(arr[1]);var padding=height*100/width;return padding+"%"}function getHtml(opt,videoId){var videoUrl=getVideoUrl(opt,videoId);var padding=getPadding(opt.ratio);return'\n\t\t\t\t\t<div class="'+opt.classNames.modalVideo+'" tabindex="-1" role="dialog" aria-label="'+opt.aria.openMessage+'">\n\t\t\t\t\t\t<div class="'+opt.classNames.modalVideoBody+'">\n\t\t\t\t\t\t\t<div class="'+opt.classNames.modalVideoInner+'">\n\t\t\t\t\t\t\t\t<div class="'+opt.classNames.modalVideoIframeWrap+'" style="padding-bottom:'+padding+'">\n\t\t\t\t\t\t\t\t\t<button class="'+opt.classNames.modalVideoCloseBtn+' js-modal-video-dismiss-btn" aria-label="'+opt.aria.dismissBtnMessage+"\"/>\n\t\t\t\t\t\t\t\t\t<iframe width='460' height='230' src=\""+videoUrl+"\" frameborder='0' allowfullscreen="+opt.allowFullScreen+' tabindex="-1"/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t'}$.fn.modalVideo=function(opt){opt=$.extend({},defaults,opt);$(this).each(function(){if(!$(this).data("video-id")){$(this).data("video-id",opt.videoId)}});$(this).click(function(){var $me=$(this);var videoId=$me.data("video-id");var html=getHtml(opt,videoId);var $modal=$(html);var $btn=$modal.find(".js-modal-video-dismiss-btn");var speed=opt.animationSpeed;$("body").append($modal);$modal.focus();$modal.on("click",function(){var $self=$(this);$self.addClass(opt.classNames.modalVideoClose);$self.off("click");$self.off("keydown");$btn.off("click");setTimeout(function(){$self.remove();$me.focus()},speed)});$btn.on("click",function(){$modal.trigger("click")});$modal.on("keydown",function(e){if(e.which===9){e.preventDefault();if($modal.is(":focus")){$btn.focus()}else{$modal.attr("aria-label","");$modal.focus()}}})})}});
+	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$('.abn-success-stories-slider').slick({
+			dots: true,
+			infinite: true,
+			autoplay: false,
+			speed: 300,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			responsive: [
+		    {
+		        breakpoint: 1024,
+		    	settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+		    	}
+		    },
+		    {
+		        breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+		    },
+		    {
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+		    }
+		    // You can unslick at a given breakpoint now by adding:
+		    // settings: "unslick"
+		    // instead of a settings object
+		  ]
+		});
+
+
+		$(".abn-ss-video-1").modalVideo();
+		$(".abn-ss-video-2").modalVideo();
+		$(".abn-ss-video-3").modalVideo();
+		$(".abn-ss-video-4").modalVideo();
+		$(".abn-ss-video-5").modalVideo();
+		$(".abn-ss-video-6").modalVideo();
+	</script>
+	
+</body>
+</html>
