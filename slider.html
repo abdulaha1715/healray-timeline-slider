@@ -16,6 +16,42 @@
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+		.modal-video-movie-wrap {
+		    border: 5px solid #ffffff;
+		    border-radius: 10px;
+		}
+
+		.modal-video-movie-wrap iframe {
+		    border-radius: 10px;
+		}
+		.modal-video-close-btn {
+		    position: absolute;
+		    z-index: 2;
+		    top: 15px;
+		    right: 15px;
+		    display: inline-block;
+		    width: 35px;
+		    height: 35px;
+		    overflow: hidden;
+		    border: none;
+		    background: #ffffff;
+		    border-radius: 50%;
+		    cursor: pointer;
+		}
+
+		.modal-video-close-btn:before, 
+		.modal-video-close-btn:after {
+		    content: '';
+		    position: absolute;
+		    height: 3px;
+		    width: 78%;
+		    top: calc(50% + 4px);
+		    left: calc(0% + 4px);
+		    margin-top: -1px;
+		    background: #707477;
+		    border-radius: 5px;
+		    margin-top: -6px;
+		}	
 		.abn-popup-slider {
 			overflow: hidden;
 		}
