@@ -16,6 +16,54 @@
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+		.abn-other-dentist-say {
+		    overflow: hidden;
+		    padding: 96px 20px;
+		}
+		.abn-container-wrapper {
+		    max-width: 1284px;
+		    margin: 0 auto;
+		    display: flex;
+		    gap: 60px;
+		    align-items: center;
+		}
+
+		.abn-ods-content {
+		    min-width: 375px;
+		}
+
+		.abn-ods-content h2 {
+		    color: #121212;
+		    font-size: 44px;
+		    font-family: Avenir Next;
+		    line-height: 1.2;
+		    font-weight: 500;
+		    margin: 0 0 32px 0;
+		}
+
+		.abn-ods-content h2 span {
+		    color: #0D6976;
+		    font-weight: 700;
+		}
+
+		.abn-ods-content p {
+		    color: #121212;
+		    font-size: 32px;
+		    font-weight: 400;
+		    font-family: "Montserrat", sans-serif;
+		    line-height: 1.4;
+		    margin: 0;
+		}
+
+		.abn-ods-content p span {
+		    font-weight: 700;
+		}
+
+		.abn-ods-slider {
+		    max-width: calc(100% - 436px);
+		}
+
+
 		.modal-video-movie-wrap {
 		    border: 5px solid #ffffff;
 		    border-radius: 10px;
@@ -52,9 +100,7 @@
 		    border-radius: 5px;
 		    margin-top: -6px;
 		}	
-		.abn-popup-slider {
-			overflow: hidden;
-		}
+		.abn-popup-slider {}
 
 		/* the slides */
 		.abn-popup-slider .slick-slide {
@@ -65,7 +111,59 @@
 		.abn-popup-slider .slick-list {
 			margin: 0 -15px;
 		}
+.abn-popup-slider ul.slick-dots {
+    width: 185px;
+    height: 32px;
+    bottom: 130px;
+    left: -388px;
+    z-index: 55;
+}
 
+.abn-popup-slider ul.slick-dots li {
+    width: 14px;
+    height: 14px;
+}
+
+.abn-popup-slider .slick-dots li button:before {
+    position: unset !important;
+    content: none !important;
+}
+
+.abn-popup-slider .slick-dots li button {
+    padding: 0 !important;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #4FA2AE;
+}
+
+.abn-popup-slider .slick-dots li.slick-active button {
+    background: #4FA2AE;
+}
+
+.abn-popup-slider .slick-arrow {
+    width: 48px;
+    height: 48px;
+}
+
+.abn-popup-slider .slick-prev {
+    left: -440px;
+    top: unset;
+    bottom: 100px;
+}
+
+.abn-popup-slider .slick-next {
+    left: -208px;
+    top: unset;
+    bottom: 100px;
+}
+
+.abn-popup-slider .slick-prev:before, 
+.abn-popup-slider .slick-next:before {
+    font-size: 58px;
+    opacity: 1;
+    color: #4fa2ae;
+}
 		.abn-slide-item-area {}
 
 		.abn-image-box {
@@ -88,7 +186,7 @@
 		    font-size: 24px;
 		    font-family: "Montserrat", sans-serif;
 		    line-height: 1.4;
-		    margin-bottom: 2px;
+		    margin: 0 0 2px;
 		}
 
 		.abn-user-info p {
@@ -98,6 +196,7 @@
 		    font-family: "Montserrat", sans-serif;
 		    line-height: 1.4;
 		    display: inline-block;
+		    margin: 0;
 		}
 
 		.abn-user-info p:before {
@@ -141,119 +240,205 @@
 		    font-weight: 400;
 		    font-style: italic;
 		}
+
+@media only screen and (max-width: 1024px) {
+
+	.abn-other-dentist-say {
+	    padding: 60px 20px;
+	}
+	.abn-popup-slider .slick-prev {
+	    bottom: 80px;
+	}
+	.abn-popup-slider .slick-next {
+	    bottom: 80px;
+	}
+	.abn-popup-slider ul.slick-dots {
+	    bottom: 108px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.abn-other-dentist-say {
+	    padding: 40px 20px;
+	}
+.abn-container-wrapper {
+    display: block;
+}
+
+.abn-ods-slider {
+    width: 100%;
+    min-width: 100%;
+}
+
+.abn-popup-slider {
+    width: 100%;
+}
+.abn-popup-slider ul.slick-dots {
+    bottom: -54px;
+    width: 150px;
+    left: calc(50% - 75px);
+}
+
+.abn-popup-slider .slick-prev:before, 
+.abn-popup-slider .slick-next:before {
+    font-size: 48px;
+    opacity: 1;
+    color: #4fa2ae;
+}
+
+.abn-popup-slider .slick-next {
+    left: unset;
+    right: calc(50% - 125px);
+    top: unset;
+    bottom: -85px !important;
+}
+
+.abn-popup-slider .slick-prev {
+    left: calc(50% - 125px);
+    top: unset;
+    bottom: -85px !important;
+}
+
+.abn-ods-content h2 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 8px;
+}
+
+.abn-ods-content p {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.abn-ods-content {
+    min-width: 100%;
+}
+
+}
+
 	</style>
 
 </head>
 <body>
 
-
-	<section class="abn-popup-slider">
-		<div class="abn-slide-item-area">
-			<div class="abn-image-box">
-				<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-				<div class="abn-user-info">
-					<h4>Dr. Natalia Ratmiroff DMD</h4>
-					<p>Licensed Dentist</p>
-				</div>
-				<div class="abn-video-play">
-					<a href="#" class="js-video-button-1" data-video-id='ScMzIvxBSi4'>
-						<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-					</a>
-				</div>
+	<section class="abn-other-dentist-say">
+		<div class="abn-container-wrapper">
+			<div class="abn-ods-content">
+				<h2>This Is What <span>Other Dentist</span> Say</h2>
+				<p>Yes... They Use <span>HealRay</span> Every Day Themselves!</p>
 			</div>
-			<div class="abn-doctor-content">
-				<h3>Dr. Natalia Ratmiroff DMD</h3>
-				<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-			</div>
-		</div>
-		<div class="abn-slide-item-area">
-			<div class="abn-image-box">
-				<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-				<div class="abn-user-info">
-					<h4>Dr. John Cairns DMD</h4>
-					<p>Licensed Dentist</p>
+			<div class="abn-ods-slider">
+				<div class="abn-popup-slider">
+					<div class="abn-slide-item-area">
+						<div class="abn-image-box">
+							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+							<div class="abn-user-info">
+								<h4>Dr. Natalia Ratmiroff DMD</h4>
+								<p>Licensed Dentist</p>
+							</div>
+							<div class="abn-video-play">
+								<a href="#" class="js-video-button-1" data-video-id='ScMzIvxBSi4'>
+									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+								</a>
+							</div>
+						</div>
+						<div class="abn-doctor-content">
+							<h3>Dr. Natalia Ratmiroff DMD</h3>
+							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
+						</div>
+					</div>
+					<div class="abn-slide-item-area">
+						<div class="abn-image-box">
+							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+							<div class="abn-user-info">
+								<h4>Dr. John Cairns DMD</h4>
+								<p>Licensed Dentist</p>
+							</div>
+							<div class="abn-video-play">
+								<a href="#" class="js-video-button-2" data-video-id='u31qwQUeGuM'>
+									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+								</a>
+							</div>
+						</div>
+						<div class="abn-doctor-content">
+							<h3>Dr. John Cairns DMD</h3>
+							<p>“Gum health isn’t just about reacting to problems—it’s about prevention. HealRay is a fantastic tool for anyone looking to maintain <b>strong, healthy gums as they age.</b>”</p>
+						</div>
+					</div>
+					<div class="abn-slide-item-area">
+						<div class="abn-image-box">
+							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+							<div class="abn-user-info">
+								<h4>Dr. Mehak Kaul DMD</h4>
+								<p>Licensed Periodontist</p>
+							</div>
+							<div class="abn-video-play">
+								<a href="#" class="js-video-button-3" data-video-id='pygGug3TCaI'>
+									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+								</a>
+							</div>
+						</div>
+						<div class="abn-doctor-content">
+							<h3>Dr. Mehak Kaul DMD</h3>
+							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works</b> – it’s safe, effective, and easy to use at home.”</p>
+						</div>
+					</div>
+					<div class="abn-slide-item-area">
+						<div class="abn-image-box">
+							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+							<div class="abn-user-info">
+								<h4>Dr. David Lesansky DMD</h4>
+								<p>Licensed Dentist</p>
+							</div>
+							<div class="abn-video-play">
+								<a href="#" class="js-video-button-1" data-video-id='u31qwQUeGuM'>
+									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+								</a>
+							</div>
+						</div>
+						<div class="abn-doctor-content">
+							<h3>Dr. David Lesansky DMD</h3>
+							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
+						</div>
+					</div>
+					<div class="abn-slide-item-area">
+						<div class="abn-image-box">
+							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+							<div class="abn-user-info">
+								<h4>Dr. Kathleen Navarro</h4>
+								<p>Licensed Dentist</p>
+							</div>
+							<div class="abn-video-play">
+								<a href="#" class="js-video-button-2" data-video-id='ScMzIvxBSi4'>
+									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+								</a>
+							</div>
+						</div>
+						<div class="abn-doctor-content">
+							<h3>Dr. Kathleen Navarro</h3>
+							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
+						</div>
+					</div>
+					<div class="abn-slide-item-area">
+						<div class="abn-image-box">
+							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
+							<div class="abn-user-info">
+								<h4>Dr. Brian McAll, DMD</h4>
+								<p>Licensed Dentist</p>
+							</div>
+							<div class="abn-video-play">
+								<a href="#" class="js-video-button-3" data-video-id='pygGug3TCaI'>
+									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
+								</a>
+							</div>
+						</div>
+						<div class="abn-doctor-content">
+							<h3>Dr. Brian McAll, DMD</h3>
+							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
+						</div>
+					</div>
 				</div>
-				<div class="abn-video-play">
-					<a href="#" class="js-video-button-2" data-video-id='u31qwQUeGuM'>
-						<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-					</a>
-				</div>
-			</div>
-			<div class="abn-doctor-content">
-				<h3>Dr. John Cairns DMD</h3>
-				<p>“Gum health isn’t just about reacting to problems—it’s about prevention. HealRay is a fantastic tool for anyone looking to maintain <b>strong, healthy gums as they age.</b>”</p>
-			</div>
-		</div>
-		<div class="abn-slide-item-area">
-			<div class="abn-image-box">
-				<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-				<div class="abn-user-info">
-					<h4>Dr. Mehak Kaul DMD</h4>
-					<p>Licensed Periodontist</p>
-				</div>
-				<div class="abn-video-play">
-					<a href="#" class="js-video-button-3" data-video-id='pygGug3TCaI'>
-						<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-					</a>
-				</div>
-			</div>
-			<div class="abn-doctor-content">
-				<h3>Dr. Mehak Kaul DMD</h3>
-				<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works</b> – it’s safe, effective, and easy to use at home.”</p>
-			</div>
-		</div>
-		<div class="abn-slide-item-area">
-			<div class="abn-image-box">
-				<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-				<div class="abn-user-info">
-					<h4>Dr. David Lesansky DMD</h4>
-					<p>Licensed Dentist</p>
-				</div>
-				<div class="abn-video-play">
-					<a href="#" class="js-video-button-1" data-video-id='u31qwQUeGuM'>
-						<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-					</a>
-				</div>
-			</div>
-			<div class="abn-doctor-content">
-				<h3>Dr. David Lesansky DMD</h3>
-				<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-			</div>
-		</div>
-		<div class="abn-slide-item-area">
-			<div class="abn-image-box">
-				<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-				<div class="abn-user-info">
-					<h4>Dr. Kathleen Navarro</h4>
-					<p>Licensed Dentist</p>
-				</div>
-				<div class="abn-video-play">
-					<a href="#" class="js-video-button-2" data-video-id='ScMzIvxBSi4'>
-						<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-					</a>
-				</div>
-			</div>
-			<div class="abn-doctor-content">
-				<h3>Dr. Kathleen Navarro</h3>
-				<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-			</div>
-		</div>
-		<div class="abn-slide-item-area">
-			<div class="abn-image-box">
-				<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-				<div class="abn-user-info">
-					<h4>Dr. Brian McAll, DMD</h4>
-					<p>Licensed Dentist</p>
-				</div>
-				<div class="abn-video-play">
-					<a href="#" class="js-video-button-3" data-video-id='pygGug3TCaI'>
-						<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-					</a>
-				</div>
-			</div>
-			<div class="abn-doctor-content">
-				<h3>Dr. Brian McAll, DMD</h3>
-				<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
 			</div>
 		</div>
 	</section>
@@ -272,23 +457,23 @@
 			infinite: true,
 			autoplay: false,
 			speed: 300,
-			slidesToShow: 3,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			responsive: [
 		    {
 		        breakpoint: 1024,
 		    	settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
+					slidesToShow: 2,
+					slidesToScroll: 1,
 					infinite: true,
 					dots: true
 		    	}
 		    },
 		    {
-		        breakpoint: 600,
+		        breakpoint: 767,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
+					slidesToShow: 1,
+					slidesToScroll: 1
 				}
 		    },
 		    {
