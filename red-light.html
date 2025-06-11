@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Slider</title>
+	<title>Red Light</title>
 
 
 	<!-- ABN Slider Section Stylesheets -->
@@ -16,23 +16,21 @@
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-		.abn-other-dentist-say {
-		    overflow: hidden;
+		.abn-red-light-section {
 		    padding: 96px 20px;
 		}
 		.abn-container-wrapper {
 		    max-width: 1284px;
 		    margin: 0 auto;
 		    display: flex;
-		    gap: 60px;
-		    align-items: center;
+		    gap: 56px;
 		}
 
-		.abn-ods-content {
+		.abn-redl-content {
 		    min-width: 375px;
 		}
 
-		.abn-ods-content h2 {
+		.abn-redl-content h2 {
 		    color: #121212;
 		    font-size: 44px;
 		    font-family: Avenir Next;
@@ -41,12 +39,12 @@
 		    margin: 0 0 32px 0;
 		}
 
-		.abn-ods-content h2 span {
+		.abn-redl-content h2 span {
 		    color: #0D6976;
 		    font-weight: 700;
 		}
 
-		.abn-ods-content p {
+		.abn-redl-content p {
 		    color: #121212;
 		    font-size: 32px;
 		    font-weight: 400;
@@ -55,11 +53,11 @@
 		    margin: 0;
 		}
 
-		.abn-ods-content p span {
+		.abn-redl-content p span {
 		    font-weight: 700;
 		}
 
-		.abn-ods-slider {
+		.abn-redl-slider-area {
 		    max-width: calc(100% - 436px);
 		}
 
@@ -100,36 +98,36 @@
 		    border-radius: 5px;
 		    margin-top: -6px;
 		}	
-		.abn-popup-slider {}
+		.abn-redl-slider {}
 
 		/* the slides */
-		.abn-popup-slider .slick-slide {
+		.abn-redl-slider .slick-slide {
 		    margin: 0 15px;
 		}
 
 		/* the parent */
-		.abn-popup-slider .slick-list {
+		.abn-redl-slider .slick-list {
 			margin: 0 -15px;
 		}
-		.abn-popup-slider ul.slick-dots {
-		    width: 185px;
+		.abn-redl-slider ul.slick-dots {
+		    width: 200px;
 		    height: 32px;
-		    bottom: 130px;
-		    left: -388px;
+		    top: 328px;
+		    left: -395px;
 		    z-index: 55;
 		}
 
-		.abn-popup-slider ul.slick-dots li {
+		.abn-redl-slider ul.slick-dots li {
 		    width: 14px;
 		    height: 14px;
 		}
 
-		.abn-popup-slider .slick-dots li button:before {
+		.abn-redl-slider .slick-dots li button:before {
 		    position: unset !important;
 		    content: none !important;
 		}
 
-		.abn-popup-slider .slick-dots li button {
+		.abn-redl-slider .slick-dots li button {
 		    padding: 0 !important;
 		    width: 14px;
 		    height: 14px;
@@ -137,40 +135,38 @@
 		    border: 2px solid #4FA2AE;
 		}
 
-		.abn-popup-slider .slick-dots li.slick-active button {
+		.abn-redl-slider .slick-dots li.slick-active button {
 		    background: #4FA2AE;
 		}
 
-		.abn-popup-slider .slick-arrow {
+		.abn-redl-slider .slick-arrow {
 		    width: 48px;
 		    height: 48px;
 		}
 
-		.abn-popup-slider .slick-prev {
+		.abn-redl-slider .slick-prev {
 		    left: -440px;
-		    top: unset;
-		    bottom: 100px;
+		    top: 340px;
 		}
 
-		.abn-popup-slider .slick-next {
+		.abn-redl-slider .slick-next {
 		    left: -208px;
-		    top: unset;
-		    bottom: 100px;
+		    top: 340px;
 		}
 
-		.abn-popup-slider .slick-prev:before, 
-		.abn-popup-slider .slick-next:before {
+		.abn-redl-slider .slick-prev:before, 
+		.abn-redl-slider .slick-next:before {
 		    font-size: 58px;
 		    opacity: 1;
 		    color: #4fa2ae;
 		}
 		.abn-slide-item-area {}
 
-		.abn-image-box {
+		.abn-redl-image-box {
 		    position: relative;
 		}
 
-		.abn-image-box img {
+		.abn-redl-image-box img {
 			width: 100%;
 		}
 
@@ -243,75 +239,93 @@
 
 		@media only screen and (max-width: 1024px) {
 
-			.abn-other-dentist-say {
+			.abn-red-light-section {
 			    padding: 60px 20px 76px;
 			}
-			.abn-popup-slider .slick-prev {
+			.abn-redl-slider .slick-prev {
 			    bottom: 80px;
 			}
-			.abn-popup-slider .slick-next {
+			.abn-redl-slider .slick-next {
 			    bottom: 80px;
 			}
-			.abn-popup-slider ul.slick-dots {
+			.abn-redl-slider ul.slick-dots {
 			    bottom: 108px;
 			}
 		}
 
-		@media only screen and (max-width: 767px) {
-			.abn-other-dentist-say {
-			    padding: 56px 20px 96px;
-			}
+		@media only screen and (max-width: 991px) {
 			.abn-container-wrapper {
 			    display: block;
 			}
 
-			.abn-ods-slider {
+			.abn-redl-slider-area {
 			    width: 100%;
 			    min-width: 100%;
 			}
 
-			.abn-popup-slider {
+			.abn-redl-slider {
 			    width: 100%;
 			}
-			.abn-popup-slider ul.slick-dots {
-			    bottom: -54px;
+			.abn-redl-content h2 {
+			    text-align: center;
+			    font-size: 32px;
+			    margin: 0 0 16px 0;
+			}
+			.abn-redl-content p {
+			    text-align: center;
+			    font-size: 24px;
+			    margin: 0 0 48px 0;
+			}
+			.abn-redl-slider ul.slick-dots {
+			    top: unset;
+			    bottom: -72px;
 			    width: 150px;
 			    left: calc(50% - 75px);
 			}
 
-			.abn-popup-slider .slick-prev:before, 
-			.abn-popup-slider .slick-next:before {
+			.abn-redl-slider .slick-prev:before, 
+			.abn-redl-slider .slick-next:before {
 			    font-size: 48px;
 			    opacity: 1;
 			    color: #4fa2ae;
 			}
 
-			.abn-popup-slider .slick-next {
+			.abn-redl-slider .slick-next {
 			    left: unset;
 			    right: calc(50% - 125px);
 			    top: unset;
-			    bottom: -85px !important;
+			    bottom: -104px !important;
 			}
 
-			.abn-popup-slider .slick-prev {
+			.abn-redl-slider .slick-prev {
 			    left: calc(50% - 125px);
 			    top: unset;
-			    bottom: -85px !important;
+			    bottom: -104px !important;
 			}
+			  
 
-			.abn-ods-content h2 {
+		}
+
+
+
+		@media only screen and (max-width: 767px) {
+			.abn-red-light-section {
+			    padding: 56px 20px 96px;
+			}  
+
+			.abn-redl-content h2 {
 			    font-size: 28px;
 			    text-align: center;
 			    margin: 0 0 8px;
 			}
 
-			.abn-ods-content p {
+			.abn-redl-content p {
 			    text-align: center;
 			    font-size: 22px;
 			    margin-bottom: 24px;
 			}
 
-			.abn-ods-content {
+			.abn-redl-content {
 			    min-width: 100%;
 			}
 
@@ -322,121 +336,31 @@
 </head>
 <body>
 
-	<section class="abn-other-dentist-say">
+	<section class="abn-red-light-section">
 		<div class="abn-container-wrapper">
-			<div class="abn-ods-content">
-				<h2>This Is What <span>Other Dentist</span> Say</h2>
-				<p>Yes... They Use <span>HealRay</span> Every Day Themselves!</p>
+			<div class="abn-redl-content">
+				<h2>See the Healing Power of <span>Red Light in Action</span> </h2>
+				<p>Stronger Gums. Less Pain. More Confidence.</p>
 			</div>
-			<div class="abn-ods-slider">
-				<div class="abn-popup-slider">
-					<div class="abn-slide-item-area">
-						<div class="abn-image-box">
-							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-							<div class="abn-user-info">
-								<h4>Dr. Natalia Ratmiroff DMD</h4>
-								<p>Licensed Dentist</p>
-							</div>
-							<div class="abn-video-play">
-								<a href="#" class="js-video-button-1" data-video-id='ScMzIvxBSi4'>
-									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-								</a>
-							</div>
-						</div>
-						<div class="abn-doctor-content">
-							<h3>Dr. Natalia Ratmiroff DMD</h3>
-							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-						</div>
+			<div class="abn-redl-slider-area">
+				<div class="abn-redl-slider">
+					<div class="abn-redl-image-box">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
 					</div>
-					<div class="abn-slide-item-area">
-						<div class="abn-image-box">
-							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-							<div class="abn-user-info">
-								<h4>Dr. John Cairns DMD</h4>
-								<p>Licensed Dentist</p>
-							</div>
-							<div class="abn-video-play">
-								<a href="#" class="js-video-button-2" data-video-id='u31qwQUeGuM'>
-									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-								</a>
-							</div>
-						</div>
-						<div class="abn-doctor-content">
-							<h3>Dr. John Cairns DMD</h3>
-							<p>“Gum health isn’t just about reacting to problems—it’s about prevention. HealRay is a fantastic tool for anyone looking to maintain <b>strong, healthy gums as they age.</b>”</p>
-						</div>
+					<div class="abn-redl-image-box">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
 					</div>
-					<div class="abn-slide-item-area">
-						<div class="abn-image-box">
-							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-							<div class="abn-user-info">
-								<h4>Dr. Mehak Kaul DMD</h4>
-								<p>Licensed Periodontist</p>
-							</div>
-							<div class="abn-video-play">
-								<a href="#" class="js-video-button-3" data-video-id='pygGug3TCaI'>
-									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-								</a>
-							</div>
-						</div>
-						<div class="abn-doctor-content">
-							<h3>Dr. Mehak Kaul DMD</h3>
-							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works</b> – it’s safe, effective, and easy to use at home.”</p>
-						</div>
+					<div class="abn-redl-image-box">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
 					</div>
-					<div class="abn-slide-item-area">
-						<div class="abn-image-box">
-							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-							<div class="abn-user-info">
-								<h4>Dr. David Lesansky DMD</h4>
-								<p>Licensed Dentist</p>
-							</div>
-							<div class="abn-video-play">
-								<a href="#" class="js-video-button-1" data-video-id='u31qwQUeGuM'>
-									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-								</a>
-							</div>
-						</div>
-						<div class="abn-doctor-content">
-							<h3>Dr. David Lesansky DMD</h3>
-							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-						</div>
+					<div class="abn-redl-image-box">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
 					</div>
-					<div class="abn-slide-item-area">
-						<div class="abn-image-box">
-							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-							<div class="abn-user-info">
-								<h4>Dr. Kathleen Navarro</h4>
-								<p>Licensed Dentist</p>
-							</div>
-							<div class="abn-video-play">
-								<a href="#" class="js-video-button-2" data-video-id='ScMzIvxBSi4'>
-									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-								</a>
-							</div>
-						</div>
-						<div class="abn-doctor-content">
-							<h3>Dr. Kathleen Navarro</h3>
-							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-						</div>
+					<div class="abn-redl-image-box">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
 					</div>
-					<div class="abn-slide-item-area">
-						<div class="abn-image-box">
-							<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-							<div class="abn-user-info">
-								<h4>Dr. Brian McAll, DMD</h4>
-								<p>Licensed Dentist</p>
-							</div>
-							<div class="abn-video-play">
-								<a href="#" class="js-video-button-3" data-video-id='pygGug3TCaI'>
-									<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
-								</a>
-							</div>
-						</div>
-						<div class="abn-doctor-content">
-							<h3>Dr. Brian McAll, DMD</h3>
-							<p>“I’ve seen countless patients frustrated by bleeding gums and tooth sensitivity. <b>HealRay offers an innovative solution that works </b> – it’s safe, effective, and easy to use at home.”</p>
-						</div>
+					<div class="abn-redl-image-box">
+						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
 					</div>
 				</div>
 			</div>
@@ -452,7 +376,7 @@
 	</script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script>
-		$('.abn-popup-slider').slick({
+		$('.abn-redl-slider').slick({
 			dots: true,
 			infinite: true,
 			autoplay: false,
