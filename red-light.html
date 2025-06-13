@@ -7,6 +7,7 @@
 
 
 	<!-- ABN Slider Section Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<style>
@@ -113,7 +114,7 @@
 		    width: 200px;
 		    height: 32px;
 		    top: 328px;
-		    left: -395px;
+		    left: -400px;
 		    z-index: 55;
 		}
 
@@ -142,6 +143,8 @@
 		.abn-redl-slider .slick-arrow {
 		    width: 48px;
 		    height: 48px;
+		    background: #4fa2ae;
+		    border-radius: 50%;
 		}
 
 		.abn-redl-slider .slick-prev {
@@ -156,9 +159,11 @@
 
 		.abn-redl-slider .slick-prev:before, 
 		.abn-redl-slider .slick-next:before {
-		    font-size: 58px;
-		    opacity: 1;
-		    color: #4fa2ae;
+		    content: none;
+		}
+		.abn-redl-slider i {
+		    font-size: 21px;
+		    color: #FFFFFF;
 		}
 		.abn-slide-item-area {}
 
@@ -278,7 +283,7 @@
 			}
 			.abn-redl-slider ul.slick-dots {
 			    top: unset;
-			    bottom: -72px;
+			    bottom: -75px;
 			    width: 150px;
 			    left: calc(50% - 75px);
 			}
@@ -288,6 +293,7 @@
 			    font-size: 48px;
 			    opacity: 1;
 			    color: #4fa2ae;
+			    content: none;
 			}
 
 			.abn-redl-slider .slick-next {
@@ -383,6 +389,8 @@
 			speed: 300,
 			slidesToShow: 2,
 			slidesToScroll: 1,
+			prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 			responsive: [
 		    {
 		        breakpoint: 1024,

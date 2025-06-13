@@ -7,6 +7,7 @@
 
 
 	<!-- ABN Slider Section Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<style>
@@ -121,6 +122,12 @@
 		.abn-success-stories-slider .slick-arrow {
 		    width: 48px;
 		    height: 48px;
+		    background: #4fa2ae;
+		    border-radius: 50%;
+		}
+		.abn-success-stories-slider i {
+		    font-size: 21px;
+		    color: #FFFFFF;
 		}
 
 		.abn-success-stories-slider .slick-prev {
@@ -140,14 +147,16 @@
 
 		.abn-success-stories-slider .slick-prev:before, 
 		.abn-success-stories-slider .slick-next:before {
-		    font-size: 58px;
-		    opacity: 1;
-		    color: #4fa2ae;
+		    content: none;
 		}
 		.abn-slide-item-area {}
 
 		.abn-ss-slider-item {
 		    position: relative;
+		}
+		
+		.abn-success-stories-slider video {
+		    width: 100%;
 		}
 
 		.abn-ss-slider-item img {
@@ -194,7 +203,7 @@
 			    width: 100%;
 			}
 			.abn-success-stories-slider ul.slick-dots {
-			    bottom: -64px;
+			    bottom: -68px;
 			    width: 150px;
 			    left: calc(50% - 75px);
 			}
@@ -240,52 +249,52 @@
 			<div class="abn-ss-slider-area">
 				<div class="abn-success-stories-slider">
 					<div class="abn-ss-slider-item">
-						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-						<div class="abn-ss-video-play">
+						<video src="images/vertical-video.mp4"></video>
+						<!-- <div class="abn-ss-video-play">
 							<a href="#" class="abn-ss-video-1" data-video-id='ScMzIvxBSi4'>
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="abn-ss-slider-item">
-						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-						<div class="abn-ss-video-play">
+						<video src="images/vertical-video.mp4"></video>
+						<!-- <div class="abn-ss-video-play">
 							<a href="#" class="abn-ss-video-2" data-video-id='ScMzIvxBSi4'>
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="abn-ss-slider-item">
-						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-						<div class="abn-ss-video-play">
+						<video src="images/vertical-video.mp4"></video>
+						<!-- <div class="abn-ss-video-play">
 							<a href="#" class="abn-ss-video-3" data-video-id='ScMzIvxBSi4'>
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="abn-ss-slider-item">
-						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-						<div class="abn-ss-video-play">
+						<video src="images/vertical-video.mp4"></video>
+						<!-- <div class="abn-ss-video-play">
 							<a href="#" class="abn-ss-video-4" data-video-id='ScMzIvxBSi4'>
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="abn-ss-slider-item">
-						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-						<div class="abn-ss-video-play">
+						<video src="images/vertical-video.mp4"></video>
+						<!-- <div class="abn-ss-video-play">
 							<a href="#" class="abn-ss-video-5" data-video-id='ScMzIvxBSi4'>
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="abn-ss-slider-item">
-						<img src="https://img.funnelish.com/68712/688816/1745482054-3.webp" alt="">
-						<div class="abn-ss-video-play">
+						<video src="images/vertical-video.mp4"></video>
+						<!-- <div class="abn-ss-video-play">
 							<a href="#" class="abn-ss-video-6" data-video-id='ScMzIvxBSi4'>
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -308,6 +317,8 @@
 			speed: 300,
 			slidesToShow: 5,
 			slidesToScroll: 1,
+			prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 			responsive: [
 		    {
 		        breakpoint: 1024,
