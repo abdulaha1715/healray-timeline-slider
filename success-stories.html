@@ -154,6 +154,21 @@
 		.abn-ss-slider-item {
 		    position: relative;
 		}
+		/* Custom play button styling */
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
 		
 		.abn-success-stories-slider video {
 		    width: 100%;
@@ -249,52 +264,58 @@
 			<div class="abn-ss-slider-area">
 				<div class="abn-success-stories-slider">
 					<div class="abn-ss-slider-item">
-						<video src="images/vertical-video.mp4"></video>
-						<!-- <div class="abn-ss-video-play">
-							<a href="#" class="abn-ss-video-1" data-video-id='ScMzIvxBSi4'>
+						<video id="ss-v-1" src="images/vertical-video.mp4" controls></video>
+						  
+						<div class="abn-ss-video-play">
+							<a href="#" class="" id="customPlayBtn-1">
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div> -->
+						</div>
 					</div>
 					<div class="abn-ss-slider-item">
-						<video src="images/vertical-video.mp4"></video>
-						<!-- <div class="abn-ss-video-play">
-							<a href="#" class="abn-ss-video-2" data-video-id='ScMzIvxBSi4'>
+						<video id="ss-v-2" src="images/vertical-video.mp4" controls></video>
+						  
+						<div class="abn-ss-video-play">
+							<a href="#" class="" id="customPlayBtn-2">
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div> -->
+						</div>
 					</div>
 					<div class="abn-ss-slider-item">
-						<video src="images/vertical-video.mp4"></video>
-						<!-- <div class="abn-ss-video-play">
-							<a href="#" class="abn-ss-video-3" data-video-id='ScMzIvxBSi4'>
+						<video id="ss-v-3" src="images/vertical-video.mp4" controls></video>
+						  
+						<div class="abn-ss-video-play">
+							<a href="#" class="" id="customPlayBtn-3">
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div> -->
+						</div>
 					</div>
 					<div class="abn-ss-slider-item">
-						<video src="images/vertical-video.mp4"></video>
-						<!-- <div class="abn-ss-video-play">
-							<a href="#" class="abn-ss-video-4" data-video-id='ScMzIvxBSi4'>
+						<video id="ss-v-4" src="images/vertical-video.mp4" controls></video>
+						  
+						<div class="abn-ss-video-play">
+							<a href="#" class="" id="customPlayBtn-4">
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div> -->
+						</div>
 					</div>
 					<div class="abn-ss-slider-item">
-						<video src="images/vertical-video.mp4"></video>
-						<!-- <div class="abn-ss-video-play">
-							<a href="#" class="abn-ss-video-5" data-video-id='ScMzIvxBSi4'>
+						<video id="ss-v-5" src="images/vertical-video.mp4" controls></video>
+						  
+						<div class="abn-ss-video-play">
+							<a href="#" class="" id="customPlayBtn-5">
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div> -->
+						</div>
 					</div>
 					<div class="abn-ss-slider-item">
-						<video src="images/vertical-video.mp4"></video>
-						<!-- <div class="abn-ss-video-play">
-							<a href="#" class="abn-ss-video-6" data-video-id='ScMzIvxBSi4'>
+						<video id="ss-v-6" src="images/vertical-video.mp4" controls></video>
+						  
+						<div class="abn-ss-video-play">
+							<a href="#" class="" id="customPlayBtn-6">
 								<img src="https://aishanto.top/wp-content/uploads/2025/06/play-icon.png" alt="play-icon">
 							</a>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -357,6 +378,87 @@
 		$(".abn-ss-video-5").modalVideo();
 		$(".abn-ss-video-6").modalVideo();
 	</script>
-	
+	<script>
+		const video_1 = document.getElementById("ss-v-1");
+		const playBtn_1 = document.getElementById("customPlayBtn-1");
+
+		// Ensure video-1 controls are hidden initially
+		video_1.removeAttribute("controls");
+
+		playBtn_1.addEventListener("click", () => {
+			video_1.play();
+			video_1.setAttribute("controls", true);
+			playBtn_1.style.display = "none";
+		});
+
+
+		const video_2 = document.getElementById("ss-v-2");
+		const playBtn_2 = document.getElementById("customPlayBtn-2");
+
+		// Ensure video-2 controls are hidden initially
+		video_2.removeAttribute("controls");
+
+		playBtn_2.addEventListener("click", () => {
+			video_2.play();
+			video_2.setAttribute("controls", true);
+			playBtn_2.style.display = "none";
+		});
+
+		
+		const video_3 = document.getElementById("ss-v-3");
+		const playBtn_3 = document.getElementById("customPlayBtn-3");
+
+		// Ensure video-3 controls are hidden initially
+		video_3.removeAttribute("controls");
+
+		playBtn_3.addEventListener("click", () => {
+			video_3.play();
+			video_3.setAttribute("controls", true);
+			playBtn_3.style.display = "none";
+		});
+
+		
+		const video_4 = document.getElementById("ss-v-4");
+		const playBtn_4 = document.getElementById("customPlayBtn-4");
+
+		// Ensure video-4 controls are hidden initially
+		video_4.removeAttribute("controls");
+
+		playBtn_4.addEventListener("click", () => {
+			video_4.play();
+			video_4.setAttribute("controls", true);
+			playBtn_4.style.display = "none";
+		});
+
+		
+		const video_5 = document.getElementById("ss-v-5");
+		const playBtn_5 = document.getElementById("customPlayBtn-5");
+
+		// Ensure video-5 controls are hidden initially
+		video_5.removeAttribute("controls");
+
+		playBtn_5.addEventListener("click", () => {
+			video_5.play();
+			video_5.setAttribute("controls", true);
+			playBtn_5.style.display = "none";
+		});
+
+		
+		const video_6 = document.getElementById("ss-v-6");
+		const playBtn_6 = document.getElementById("customPlayBtn-6");
+
+		// Ensure video_6 controls are hidden initially
+		video_6.removeAttribute("controls");
+
+		playBtn_6.addEventListener("click", () => {
+			video_6.play();
+			video_6.setAttribute("controls", true);
+			playBtn_6.style.display = "none";
+		});
+
+
+
+	</script>
+
 </body>
 </html>
