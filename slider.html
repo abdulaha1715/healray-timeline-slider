@@ -111,6 +111,7 @@
 		/* the parent */
 		.abn-popup-slider .slick-list {
 			margin: 0 -15px;
+			margin-right: -66vh;
 		}
 		.abn-popup-slider ul.slick-dots {
 		    width: 185px;
@@ -246,6 +247,28 @@
 		    font-style: italic;
 		}
 
+		@media only screen and (max-width: 1500px) {
+			.abn-popup-slider .slick-list {
+			    margin-right: -48vh;
+			}
+		}
+
+		@media only screen and (max-width: 1380px) {
+			.abn-popup-slider .slick-next,
+			.abn-popup-slider .slick-prev {
+			    bottom: 74px;
+			}
+			.abn-popup-slider ul.slick-dots {
+			    bottom: 103px;
+			}
+		}
+
+		@media only screen and (max-width: 1280px) {
+			.abn-popup-slider .slick-list {
+			    margin-right: -30vh;
+			}
+		}
+
 		@media only screen and (max-width: 1024px) {
 
 			.abn-other-dentist-say {
@@ -259,6 +282,42 @@
 			}
 			.abn-popup-slider ul.slick-dots {
 			    bottom: 108px;
+			}
+		}
+		@media only screen and (max-width: 991px) {
+			.abn-container-wrapper {
+			    display: block;
+			}
+			.abn-ods-content {
+			    text-align: center;
+			    margin-bottom: 44px;
+			}
+			.abn-ods-content h2 {
+			    font-size: 36px;
+			    margin: 0 0 12px 0;
+			}
+			.abn-ods-content p {
+			    font-size: 24px;
+			}
+			.abn-ods-slider {
+			    max-width: 100%;
+			}
+			.abn-ods-slider .slick-prev {
+			    left: calc(50% - 125px);
+			    top: unset;
+			    bottom: -104px !important;
+			}
+			.abn-ods-slider .slick-next {
+			    left: unset;
+			    right: calc(50% - 125px);
+			    top: unset;
+			    bottom: -104px !important;
+			}
+			.abn-ods-slider ul.slick-dots {
+			    top: unset;
+			    bottom: -75px;
+			    width: 150px;
+			    left: calc(50% - 75px);
 			}
 		}
 
@@ -303,7 +362,12 @@
 			    top: unset;
 			    bottom: -85px !important;
 			}
-
+.abn-user-info h4 {
+    font-size: 16.54px;
+}
+.abn-user-info p {
+    font-size: 11.88px;
+}
 			.abn-ods-content h2 {
 			    font-size: 28px;
 			    text-align: center;
@@ -318,6 +382,14 @@
 
 			.abn-ods-content {
 			    min-width: 100%;
+			}
+
+			.abn-popup-slider .slick-list {
+			    margin: 0 -10px;
+		        margin-right: -44vh;
+		    }
+		    .abn-popup-slider .slick-slide {
+			    margin: 0 10px;
 			}
 
 		}
@@ -462,7 +534,7 @@
 			infinite: true,
 			autoplay: false,
 			speed: 300,
-			slidesToShow: 2,
+			slidesToShow: 3,
 			slidesToScroll: 1,
 			prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
@@ -470,7 +542,7 @@
 		    {
 		        breakpoint: 1024,
 		    	settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 					slidesToScroll: 1,
 					infinite: true,
 					dots: true
@@ -479,14 +551,14 @@
 		    {
 		        breakpoint: 840,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 		    },
 		    {
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 		    }
